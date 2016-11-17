@@ -14,3 +14,4 @@ scatter <- ggplot(suicides, aes(x=year, y=deaths, color = means)) + geom_point()
 state_facet <- ggplot(suicides, aes(x=year, y=deaths, color = means)) + geom_point() + facet_wrap(~state, scales = 'free')
 state_facet_line <- ggplot(suicides, aes(x=year, y=deaths, color = means)) + geom_line() + facet_wrap(~state, scales = 'free')
 state_facet_bar <- ggplot(suicides, aes(x=year, y=deaths, color = means)) + geom_bar(aes(fill = means), stat = 'identity') + facet_wrap(~state, scales = 'free')
+
